@@ -30,4 +30,12 @@ public class ShoppingController {
     public List<Item> getData() {
         return repository.findAll();
     }
+
+    @GetMapping("/get2")
+    public Item[] items() {
+        Item[] arr = new Item[1];
+        arr[0] = new Item("1", "Football", "Round ball", 250, "...");
+
+        return arr;
+    }
 }
