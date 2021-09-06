@@ -10,7 +10,6 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Document
-
 public class Item {
     public String id;
     public String itemname;
